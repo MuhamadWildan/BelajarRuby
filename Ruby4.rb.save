@@ -1,0 +1,16 @@
+nama = "Nama Saya Muhamad Wildan"
+nama2 = "a saya scholastica dan nama saya gondes"
+
+puts nama.upcase!
+
+puts nama
+
+puts nama.downcase!
+
+puts nama
+
+puts nama2.capitalize
+
+puts "----------------"
+
+puts nama2.sub("nama","aku")
