@@ -67,4 +67,44 @@ puts mesinku.text
 puts mesinku.cetak
 
 puts "-------------------"
+class Mesinn
+attr_reader :text, :duration
+attr_writer :text, :duration
 
+ def initialize(text, duration)
+  @text = text
+  @duration = duration
+ end
+ def cetak
+  puts "Hari ini saya belaja method #{@text}"
+  puts "Waktu yang di perlukan untuk belajar nya adalah #{@duration}"
+ end
+end
+mesinkuu = Mesinn.new("Getter", "Sebentar")
+mesinkuu.cetak
+
+mesinkuu.text = "Setter"
+mesinkuu.duration = "Semenit"
+mesinkuu.cetak
+puts "------------------"
+class Musin
+attr_accessor :text, :duration
+ def initialize(text, duration)
+  @text = text
+  @duration = duration
+ end
+ def cetak
+  puts "Hari ini saya belajar method #{@text}"
+  puts "Waktu yang d perlukan adalah #{@duration}"
+ end
+end
+misinku = Musin.new("Getter", "Sebentar")
+misinku.cetak
+puts misinku.text
+puts misinku.duration
+puts "====="
+misinku.text = "Setter"
+misinku.duration = "Semenit"
+misinku.cetak
+puts misinku.text
+puts misinku.duration

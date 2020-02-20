@@ -1,0 +1,31 @@
+def prima(a)
+ c = 0
+ for i in 1..(a)
+ if a % i == 0
+  c = c + 1
+ end
+ end
+ if c == 2
+  print a," Bilangan Prima\n"
+ else
+  print a," Bukan Prima\n"
+ end
+end
+a = gets.to_i
+for i in 1..(a)
+prima(i)
+i = i + 1
+end
+puts "=-=-=-=-=-=-=-="
+for angka in 2...1000
+cek = 0
+for x in 2..angka-1
+if (angka % x == 0)
+cek = 1
+end
+end
+
+if(cek == 0)
+puts angka
+end
+end
